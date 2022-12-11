@@ -46,10 +46,10 @@ pipeline{
 					sh label: ' ',script: '''rm -rf docker				
 					mkdir docker
 					cd docker
-					cp /var/lib/jenkins/workspace/CI-CDPROJECT2/simp.war .
+					cp /var/lib/jenkins/workspace/CI-CDProject/practice2.war .
 					cat <<EOT>> dockerfile
 					FROM tomcat
-					ADD simp.war /user/local/tomcat/webapps
+					ADD practice2.war /user/local/tomcat/webapps
 					EXPOSE 8080
 					CMD ["catalina.sh" , "run"]
 					EOT
