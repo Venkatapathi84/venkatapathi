@@ -1,0 +1,23 @@
+SIMPLE SCRIPT FOR DECLRATIVE OF PIPELINE
+1)
+pipeline { 
+    agent any  
+    stages { 
+        stage('Build') { 
+            steps { 
+               echo 'This is a minimal pipeline.' 
+            }
+        }
+    }
+}
+2)
+pipeline {
+    agent any
+    stages {
+        stage('Welcome Step') {
+            steps { 
+                echo 'Welcome to LambdaTest'
+            }
+        }
+    }
+} 
