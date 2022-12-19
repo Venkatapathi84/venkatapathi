@@ -46,7 +46,7 @@ pipeline{
 					sh label: ' ',script: '''rm -rf docker				
 					mkdir docker
 					cd docker
-					cp /var/lib/jenkins/workspace/CI-CDProject/practice2.war .
+					cp /var/lib/jenkins/workspace/CICDProject1/practice2.war .
 					cat <<EOT>> dockerfile
 					FROM tomcat
 					ADD practice2.war /user/local/tomcat/webapps
